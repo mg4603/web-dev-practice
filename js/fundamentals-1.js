@@ -45,3 +45,21 @@ let a4  = prompt('First Number', 1);
 let b4 = prompt('Second Number', 2);
 alert(+a4 + +b4)
 
+// Assignment
+// 1
+console.log(1+2);
+// 2
+console.log( 1 + 2 + 3 + 4 + 5 + 6);
+// 3
+console.log(((4+6+9) / 77 ).toFixed(5));
+// 4
+let assignment_a = 10;
+console.log(assignment_a);
+console.log(9 * assignment_a);
+let assignment_b = 7*assignment_a;
+console.log(assignment_b);
+// 5
+const MAX = 57;
+let actual = MAX - 13;
+let percentage = actual / MAX;
+console.log(percentage.toFixed(4));
