@@ -78,3 +78,99 @@ if(exercise3E === 68) {
 } else {
     console.log(`'e' is incorrect, got ${exercise3E}, expected 68`)
 }
+
+
+
+// Exercise 4
+
+let testGroupExercise4 = 'a';
+const birthYearExercise4 = 1948;
+const thisYearExercise4 = 1965;
+const firstNameExercise4 = "Carlos";
+const lastNameExercise4 = "Stevenson";
+const ageExercise4 = thisYearExercise4 - birthYearExercise4;
+const fullNameExercise4 = `${firstNameExercise4} ${lastNameExercise4}`;
+const greetingExercise4 = "Hello! My name is " + fullNameExercise4 + " and I am " + ageExercise4 + " years old.";
+
+console.log(greetingExercise4);
+let erroredExercise4 = false;
+
+console.log("\n---------------------------------\n\n")
+
+if(testGroupExercise4 === "a") {
+	if(birthYearExercise4 !== 1948) {
+		console.error(`birthYear is incorrect, it's currently: "${birthYearExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(thisYearExercise4 !== 1965) {
+		console.error(`thisYear is incorrect, it's currently: "${thisYearExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(firstNameExercise4 !== "Carlos") {
+		console.error(`firstName is incorrect, it's currently: "${firstNameExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(lastNameExercise4 !== "Stevenson") {
+		console.error(`lastName is incorrect, it's currently: "${lastNameExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(greetingExercise4 !== "Hello! My name is Carlos Stevenson and I am 17 years old.") {
+		console.error(`greeting is incorrect, it's currently: "${greetingExercise4}"`);
+		errored = true;
+	}
+}
+
+if(testGroupExercise4 === "b") {
+	if(birthYearExercise4 !== 1948) {
+		console.error(`birthYear is incorrect, it's currently: "${birthYearExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(thisYearExercise4 !== 1965) {
+		console.error(`thisYear is incorrect, it's currently: "${thisYearExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(firstNameExercise4 !== "Carlos") {
+		console.error(`firstName is incorrect, it's currently: "${firstNameExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(lastNameExercise4 !== "Stevenson") {
+		console.error(`lastName is incorrect, it's currently: "${lastNameExercise4}"`);
+		erroredExercise4 = true;
+	}
+
+	if(ageExercise4 !== 17) {
+		console.error(`age is incorrect, it's currently: "${ageExercise4}"`);
+		erroredExercise4 = true;
+	}
+
+	if(fullNameExercise4 !== "Carlos Stevenson") {
+		console.error(`fullName is incorrect, it's currently: "${fullNameExercise4}"`);
+		erroredExercise4 = true;
+	}
+	
+	if(greetingExercise4 !== "Hello! My name is Carlos Stevenson and I am 17 years old.") {
+		console.error(`greeting is incorrect, it's currently: "${greetingExercise4}"`);
+		erroredExercise4 = true;
+	}
+}
+
+if(!erroredExercise4 && testGroupExercise4 === "a") {
+	console.log("Congrats! Move onto the next step!");
+} else if (erroredExercise4 && testGroupExercise4 === "a") {
+	console.log("Try again")
+}
+
+if(!erroredExercise4 && testGroupExercise4 === "b") {
+	console.log("Congrats! Move onto the next lesson!");
+} else if (erroredExercise4) {
+	console.log("Try again")
+}
+
+console.log("\n---------------------------------\n\n")
