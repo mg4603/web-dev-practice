@@ -18,8 +18,22 @@
         }
         // exercise 3
         let capitalize = function(inputString){
-
+            inputString = inputString.toLowerCase();
+            return `${inputString[0].toUpperCase()}${inputString.slice(1)}`;
         }
+        // exercise 4
+        let lastLetter = function(inputString){
+            return inputString.slice(-1);
+        }
+        console.log(add7(3));
+        console.log(multiply(2,3));
+        // Test all small
+        console.log(capitalize("complete"))
+        // Test all caps
+        console.log(capitalize("LONDON"));
+        // Test a mix of both
+        console.log(capitalize("InDoNESia"));
+        console.log(lastLetter("Australia"));
     </script>
 </body>
 </html>
