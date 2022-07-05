@@ -25,6 +25,11 @@
     <section class="preview-exercise2">
         <h2>Exercise 2</h2>
     </section>
+
+    <section class="preview-exercise3">
+        <h2>Exercise 3</h2>
+    </section>
+
   </body>
   <script>
     const myArrayExercise1 = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
@@ -60,6 +65,33 @@
     // Don't edit the code below here!
     const previewExercise2 = document.querySelector('.preview-exercise2');
     previewExercise2.appendChild(paraExercise2);
+
+
+
+    let primesIterator = 500;
+    const paraExercise3 = document.createElement('p');
+
+    function isPrime(num) {
+      for(let i = 2; i < num; i++) {
+        if(num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    while(primesIterator >= 2){
+        if(!isPrime(primesIterator)){
+            primesIterator--;
+            continue;
+        }
+        paraExercise3.innerText += `${primesIterator}, `
+        primesIterator--;
+    }
+    paraExercise3.innerText = paraExercise3.innerText.slice(0, -2);
+    const previewExercise3 = document.querySelector('.preview-exercise3');
+    previewExercise3.appendChild(paraExercise3);
   </script>
 
 </html>
