@@ -22,6 +22,9 @@
         <h2>Exercise 1</h2>
     </section>
 
+    <section class="preview-exercise2">
+        <h2>Exercise 2</h2>
+    </section>
   </body>
   <script>
     const myArrayExercise1 = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
@@ -31,6 +34,32 @@
     }
     const previewExercise1 = document.querySelector('.preview-exercise1');
     previewExercise1.appendChild(listExercise1);
+
+
+    const nameExercise2 = 'Mustafa';
+    const paraExercise2 = document.createElement('p');
+
+    const phonebookExercise2 = [
+      { name : 'Chris', number : '1549' },
+      { name : 'Li Kang', number : '9634' },
+      { name : 'Anne', number : '9065' },
+      { name : 'Francesca', number : '3001' },
+      { name : 'Mustafa', number : '6888' },
+      { name : 'Tina', number : '4312' },
+      { name : 'Bert', number : '7780' },
+      { name : 'Jada', number : '2282' },
+    ];
+
+    // Add your code here
+    for(let i = 0; i < phonebookExercise2.length; i++){
+        if(phonebookExercise2[i].name == nameExercise2){
+            paraExercise2.innerText = `${phonebookExercise2[i].name} : ${phonebookExercise2[i].number}`;
+            break;
+        }
+    }
+    // Don't edit the code below here!
+    const previewExercise2 = document.querySelector('.preview-exercise2');
+    previewExercise2.appendChild(paraExercise2);
   </script>
 
 </html>
