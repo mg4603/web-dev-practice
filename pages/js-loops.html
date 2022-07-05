@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Loops: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <h1>Loops</h1>
+    <section class="preview-exercise1">
+        <h2>Exercise 1</h2>
+    </section>
+
+  </body>
+  <script>
+    const myArrayExercise1 = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+    const listExercise1 = document.createElement('ul');
+    for(const ingredient of myArrayExercise1){
+        listExercise1.innerHTML += `<li>${ingredient}</li>`
+    }
+    const previewExercise1 = document.querySelector('.preview-exercise1');
+    previewExercise1.appendChild(listExercise1);
+  </script>
+
+</html>
