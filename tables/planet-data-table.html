@@ -5,15 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <link rel="stylesheet" href="./table-styles.css" type="text/css">
         <title>Planet Data</title>
+        <style>
+            
+        </style>
     </head>
     <body>
         <main>
             <h1>Planet Data</h1>
             <table>
                 <caption>Data about the planets of our solar system (Planetary facts taken from <a href="#">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col style="border: 2px solid black">
+                </colgroup>
                 <thead>
                     <tr>
-                        <th scope="colgroup" colspan="3">Name</th>
+                        <th colspan="2">&nbsp;</th>
+                        <th scope="col" >Name</th>
                         <th scope="col">Mass (10<sup>24</sup>kg)</th>
                         <th scope="col">Diameter (km)</th>
                         <th scope="col">Density (kg/m<sup>3</sup>)</th>
