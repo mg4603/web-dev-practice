@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        form{
+            text-align: center;
+        }
+        form > ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <title>Basic controls 1</title>
+</head>
+<body>
+    <h1>Basic Controls 1</h1>
+    <form>
+        <h2>Sign-in </h2>
+        <p>
+            Required fields are followed by <strong><abbr title="required">*</abbr></strong>.
+        </p>
+        <ol>
+            <li>
+                <label for="username">
+                    <span>Username:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" id="username" name="username">
+            </li>
+            <li>
+                <label for="passwd">
+                    <span>Password:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="password" id="passwd" name="password">
+            </li>
+            <li>
+                <input type="submit" value="Log in">
+            </li>
+        </ol>
+    </form>
+</body>
+</html>
