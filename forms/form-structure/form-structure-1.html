@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Structure Test</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Structure: Test 1</h1>
+    <form>
+        <h2>Contact Form</h2>
+        <p>
+            Required fields are followed <strong></strong><abbr title="required">*</abbr>
+        </p>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="name">
+                    <span>Name:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="age">
+                    <span>Age:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="number" name="age" id="age">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p>
+                <label for="comment">
+                    <span>Comment:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" name="comment" id="comment">
+            </p>
+            <p>
+                <label for="email">
+                    <span>Email:</span>
+                    <strong><abbr title="required"></abbr>*</strong>
+                </label>
+                <input type="email" id="email" name="email">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
