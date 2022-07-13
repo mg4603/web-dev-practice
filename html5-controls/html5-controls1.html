@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        form > ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <title>HTML5 controls: Task 1</title>
+</head>
+<body>
+    <h1>HTML5 controls: Task 1</h1>
+    <form>
+        <h2>Edit Your Preferences</h2>
+        <ul>
+            <li>
+                <label for="email">
+                    <span>Email:</span>
+                </label>
+                <input type="email" id="email" name="email">
+            </li>
+            <li>
+                <label for="website">
+                    <span>Website</span>
+                </label>
+                <input type="url" name="website" id="website">
+            </li>
+            <li>
+                <label for="phone-no">
+                    <span>Phone Number:</span>
+                </label>
+                <input type="tel" name="phone_no" id="phone-no">
+            </li>
+            <li>
+                <label for="favorite-color">
+                    <span>Favorite Color:</span>
+                </label>
+                <input type="color" id="favorite-color" name="favorite_color">
+            </li>
+            <li>
+                <button>Update preferences</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
