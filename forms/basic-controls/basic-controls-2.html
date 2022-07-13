@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+              background-color: #fff;
+              color: #333;
+              font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+              padding: 1em;
+              margin: 0;
+            }
+        
+            * {
+              box-sizing: border-box;
+            }
+            form  ul{
+                list-style: none;
+            }
+        </style>
+        <title>Basic Controls 2</title>
+    </head>
+    <body>
+       <h1>Basic controls 2</h1>
+       <form>
+        <h2>Form heading</h2>
+        <fieldset>
+            <legend>Who's your favorite pony</legend>
+            <ul>
+                <li>
+                    <label for="pinke-pie">
+                        <input type="radio" id="pinke-pie" name="favorite_pony" checked>
+                        <span>Pinke-pie</span>
+                    </label>
+                </li>
+                <li>
+                    <label for="rainbow-dash">
+                        <input type="radio" name="favorite_pony" id="rainbow-dash">
+                        <span>Rainbow Dash</span>
+                    </label>
+                </li>
+                <li>
+                    <label for="twilight-sparkle">
+                        <input type="radio" id="twilight-sparkle" name="favorite_pony">
+                        <span>Twilight Sparkle</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Hotdog Preferences</legend>
+            <ul>
+                <li>
+                    <label for="vegan">
+                        <input type="checkbox" id="vegan" name="hotdog_preference">
+                        <span>Vegan</span>
+                    </label>
+                </li>
+                <li>
+                    <label for="onions">
+                        <input type="checkbox" id="onions" name="hotdog_preference">
+                        <span>Onions</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+       </form> 
+    </body>
+</html>
