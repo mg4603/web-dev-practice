@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: #fff;
+                color: #333;
+                font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+                padding: 1em;
+                margin: 0;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+            
+            form > ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+        </style>
+        <title>HTML5 controls: Task 2</title>
+    </head>
+    <body>
+        <h1>HTML5 controls: Task 2</h1>
+        <form>
+            <ul>
+                <li>
+                    <label for="max-invite">
+                        <span>Select maximum number of invitations</span>
+                    </label>
+                    <input type="range" name="max-invite" id="max-invite" min="1" max="30" value="10">
+                </li>
+                <li>
+                    <button>Submit</button>
+                </li>
+                <li>
+                    <output class="invite-output"></output>
+                </li>
+            </ul>
+        </form>
+        <script>
+            const invite = document.querySelector('#max-invite');
+            const output = document.querySelector('.invite-output');
+      
+            output.textContent = invite.value;
+      
+            invite.addEventListener('input', function() {
+              output.textContent = invite.value;
+            });
+        </script>
+    </body>
+</html>
