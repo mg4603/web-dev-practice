@@ -23,13 +23,39 @@
         font-size: 100%;
         padding: 0; margin: 0;
       }
+      input[type="search"]{
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20vw;
+        height: 3vh;
+        padding: 5px;
+        border: 1px solid transparent; 
+        border-radius: 3px;
+      }
+      input[type="search"]:focus{
+        outline: none;
+      }
+    .search-input{
+        display: flex;
+        width: calc(20vw + 30px);
+        border: 1px solid rgba(149, 144, 144, 0.7);
+    }
+    .search-input:focus-within{
+        border: 2px solid rgb(3, 3, 3);
+        width: calc(20vw + 32px);
+    }
+    
     </style>
   </head>
 
   <body>
     <form>
-      <input type="search" name="search" id="search" aria-label="Search our site">
-      <div></div>
+        <div class="search-input">
+            <input type="search" name="search" id="search" aria-label="Search our site">
+            <div>
+                <button><img src="./search-24px.png" alt="search" srcset=""></button>
+            </div>
+        </div>
     </form>
   </body>
 
