@@ -15,6 +15,9 @@
       * {
         box-sizing: border-box;
       }
+      input:invalid{
+        border: 2px dotted red;
+      }
     </style>
   </head>
 
@@ -30,21 +33,22 @@
                     <span>User name:</span>
                     <strong><abbr title="required" aria-label="required">*</abbr></strong>
                 </label>
-                <input type="text" name="uname" id="uname" minlength=5 maxlength=20 required>
+                <input type="text" name="uname" id="uname" minlength=5 
+                        maxlength=20 pattern="[a-z]\.[a-z0-9]{3,}" required>
             </li>
             <li>
                 <label for="email">
                     <span>Email address:</span>
                     <strong><abbr title="required" aria-label="required">*</abbr></strong>
                 </label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" pattern="[a-z0-9]+@bigcorp.eu" required>
             </li>
             <li>
                 <label for="phone">
                     <span>Phone number:</span>
                     <strong><abbr title="required" aria-label="required">*</abbr></strong>
                 </label>
-                <input type="tel" name="phone" id="phone" maxlength=15 required>
+                <input type="tel" name="phone" id="phone" pattern="\d{3}([ \-\.])?\d{3}([ \-\.])?\d{4}" required>
             </li>
             <li>
                 <label for="comment">
