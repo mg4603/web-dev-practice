@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, rgb(213, 67, 92) 0%, rgb(213, 67, 92) 30%,  purple 80%, purple 100%);
+    
+}
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 50px 100px;
+    grid-auto-rows: 40px;
+}
+.item{
+    background-color: rgb(245, 192, 92);
+}
