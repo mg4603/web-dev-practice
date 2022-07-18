@@ -1,0 +1,6 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(227, 44, 74), rgb(132, 0, 255));
+}
