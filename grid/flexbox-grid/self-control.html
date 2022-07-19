@@ -6,12 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <style>
-        
+
+        .corners{
+            display: grid;
+            height: 200px;
+            width: 200px;
+            border: 10px solid var(--yellow);
+            grid-template: 1fr 1fr/ 1fr 1fr;
+            align-items: end;
+            justify-items: end;
+        }
+        .item{
+            background-color: var(--yellow);
+            font-size: 24px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+        .corner:nth-child(1),
+        .corner:nth-child(3){
+            justify-self: start;
+
+        }
+
+        .corner:nth-child(1),
+        .corner:nth-child(2){
+            align-self: start;
+        }
     </style>
     <title>Self Control</title>
 </head>
 <body>
     <h1>Self Control</h1>
-    
+    <div class="corners">
+        <div class="corner item">1</div>
+        <div class="corner item">TWO</div>
+        <div class="corner item">3</div>
+        <div class="corner item">4</div>
+    </div>
 </body>
 </html>
