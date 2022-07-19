@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <style>
-        
+        .controls{
+            margin: 200px 0;
+            display: flex;
+            display: grid;
+            /* grid-template-columns: auto auto auto 1fr auto auto; */
+            align-items: center;
+        }
+        .scrubber{
+            min-width: 100px;
+            background-color: #BADA55;
+            border-radius: 10px;
+            height: 10px;
+            flex: 1;
+        }
     </style>
     <title>Flex on Item</title>
 </head>
 <body>
     <h1>Flex on Item</h1>
+    <div class="controls">
+        <button> ⏯</button>
+        <button>🐢</button>
+        <button>🐰</button>
+        <div class="scrubber"></div>
+        <button>💬</button>
+        <button>🔻</button>
+    </div>
 </body>
 </html>
