@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <style>
-
+        button{
+            padding: 2px 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 20px;
+        }
     </style>
     <title>Unknown Number of Items</title>
 </head>
 <body>
+    
     <h1>Unknown Number of Item</h1>
+    <button onclick="addItem()">+Add</button>
+    <div class="container">
+    </div>
 </body>
+<script>
+    function addItem(e){
+        const container = document.querySelector(".container");
+        const newItem = document.createElement("div")
+        newItem.classList.add("item");
+        newItem.textContent = container.childElementCount+1;
+        // console.log(container.childElementCount);
+        container.appendChild(newItem);
+    }
+</script>
 </html>
