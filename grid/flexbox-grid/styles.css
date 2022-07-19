@@ -7,3 +7,10 @@
 body{
     background: linear-gradient(to right, rgb(227, 44, 74), rgb(132, 0, 255));
 }
+
+.item{
+    padding: 10px;
+    background-color: var(--yellow);
+    font-size: 35px;
+    font-weight: bolder;
+}
